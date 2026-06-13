@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy 8th Birthday Vansh 🎂</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Music -->
+<audio id="bgMusic" loop>
+    <source src="birthday_song.mp3" type="audio/mpeg">
+</audio>
+
+<button id="musicBtn">🎵 Play Music</button>
+
+<!-- Confetti -->
+<div id="confetti"></div>
+
+<!-- Page 1 -->
+<section class="page active" id="page1">
+
+    <div class="balloons">
+        <span>🎈</span>
+        <span>🎈</span>
+        <span>🎈</span>
+        <span>🎈</span>
+    </div>
+
+    <h1>🎂 Happy Birthday Vansh 🎂</h1>
+
+    <div class="age-circle">8</div>
+
+    <p class="subtitle">
+        Our Cricket Champion 🏏 <br>
+        Cycling Hero 🚲 <br>
+        Kite King 🪁
+    </p>
+
+    <button onclick="nextPage(2)">Open Surprise 🎁</button>
+
+</section>
+
+<!-- Page 2 -->
+<section class="page" id="page2">
+
+    <h2>Choose Your Adventure 🎉</h2>
+
+    <div class="card-container">
+
+        <div class="card" onclick="showPopup(1)">
+            🏏
+            <h3>Cricket Hero</h3>
+        </div>
+
+        <div class="card" onclick="showPopup(2)">
+            🚲
+            <h3>Cycling King</h3>
+        </div>
+
+        <div class="card" onclick="showPopup(3)">
+            🪁
+            <h3>Kite Master</h3>
+        </div>
+
+    </div>
+
+    <button onclick="nextPage(3)">Next ➜</button>
+
+</section>
+
+<!-- Page 3 -->
+<section class="page" id="page3">
+
+    <h2>📸 Vansh's Memories</h2>
+
+    <div class="gallery">
+
+        <div class="photo">
+            <img src="image1.jpeg">
+            <p>👶 Cute Vansh</p>
+        </div>
+
+        <div class="photo">
+            <img src="image2.jpeg">
+            <p>🐄 Nature Lover</p>
+        </div>
+
+        <div class="photo">
+            <img src="image3.jpeg">
+            <p>💪 Super Champ</p>
+        </div>
+
+    </div>
+
+    <button onclick="nextPage(4)">Final Surprise 🎆</button>
+
+</section>
+
+<!-- Page 4 -->
+<section class="page" id="page4">
+
+    <h1>🎉 Happy 8th Birthday Vansh 🎉</h1>
+
+    <div class="wish-box">
+
+        <p>
+            May your cricket shots go for sixes 🏏,
+            your cycle rides be full of fun 🚲,
+            and your kites always fly high 🪁.
+        </p>
+
+        <p>
+            Keep smiling, keep shining,
+            and keep making everyone proud.
+        </p>
+
+        <h2>❤️ We Love You Vansh ❤️</h2>
+
+    </div>
+
+    <button onclick="nextPage(1)">Celebrate Again 🔄</button>
+
+</section>
+
+<!-- Popup -->
+
+<div id="popup">
+
+    <div class="popup-content">
+
+        <span id="close">&times;</span>
+
+        <img id="popupImg">
+
+        <p id="popupText"></p>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
