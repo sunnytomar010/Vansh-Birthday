@@ -175,3 +175,66 @@ top:20px;
 right:20px;
 z-index:999;
 }
+/* Mobile scrolling fix */
+
+html,
+body {
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.page {
+    min-height: 100vh;
+    height: auto;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+/* Mobile responsive layout */
+@media (max-width: 768px) {
+
+    h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .card-container {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .gallery {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .photo img {
+        width: 90%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    button {
+        max-width: 90%;
+        font-size: 16px;
+    }
+
+    .age-circle {
+        width: 90px;
+        height: 90px;
+        font-size: 2rem;
+    }
+}
